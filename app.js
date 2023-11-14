@@ -1,12 +1,10 @@
-const passArea = document.querySelector(".passArea")
-const btn = document.querySelector(".btn")
+const passArea = document.querySelector("#password")
+const btn = document.querySelector("#generate")
 btn.addEventListener("click",()=>{
 const generatePass = ()=>{
 const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-const numbers = []
 const symbols = ["!","@","#","$","%","^","&","*","+","~","|","}","{","[","]",":",";","?",">","<",",",".","/","-","="]
-const symbol = []
-const letter = []
+
 let pass = []
 let lowLetter = alphabet.map((a) =>a.toLowerCase())
 let sum = [...alphabet,...lowLetter]
@@ -33,6 +31,8 @@ for(let i = 0;i<3;i++){
     }
     sortingPass(pass)
 }
+
+
 generatePass()
 })
 
@@ -40,4 +40,4 @@ generatePass()
     
 
 
-
+;

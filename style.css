@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgb(175, 128, 206) 0%, rgb(182, 109, 109) 50%, rgb(202, 166, 114) 100%);
+
+}
+
+div{
+   
+width: 50%;  
+margin: auto;
+margin-top: 3rem;
+line-height: 3rem;
+text-align: center;
+}
+
+h2{
+
+    font-weight: bold;
+
+}
+
+#generate,#copy{
+
+    padding: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    border-radius: 30px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#copy{
+    background-color: rgb(58, 151, 94);
+   padding: 1rem  1.5rem;
+
+}

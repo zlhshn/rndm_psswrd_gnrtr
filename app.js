@@ -36,8 +36,19 @@ for(let i = 0;i<3;i++){
 generatePass()
 })
 
+const copyButton = document.getElementById('copy')
 
-    
 
+copyButton.addEventListener("click", () => {
+    // Select the password text from the passArea
+    const passwordToCopy = passArea.innerText;
 
-;
+    // Copy the password text to the clipboard
+    navigator.clipboard.writeText(passwordToCopy).then(() => {
+        // You can optionally provide feedback that the password has been copied
+        console.log("Password copied to clipboard!");
+    }).catch((err) => {
+        console.error("Unable to copy password to clipboard", err);
+    });
+});
+
